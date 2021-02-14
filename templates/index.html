@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <center>
+        <h1>User Details</h1>
+    </center>
+
+    <hr>
+
+    <p>Hello User welcome to flask. Enter your details</p>
+
+    <!-- ['job', 'marital', 'default', 'balance', 'housing', 'loan', 'month', 'age_category'] -->
+
+    <form method="post" action="{{ url_for('details') }}">
+        Enter your job status (0-no job, 1-job) <input type="text" name="job">
+        Enter your marital status (0-no job, 1-job) <input type="text" name="marital">
+        Enter your default status (0-no job, 1-job) <input type="text" name="default">
+        Enter your balance (0-no job, 1-job) <input type="text" name="balance">
+        Enter your housing status (0-no job, 1-job) <input type="text" name="housing">
+        Enter your loan status (0-no job, 1-job) <input type="text" name="loan">
+        Enter your month status (0-no job, 1-job) <input type="text" name="month">
+        Enter your age_category status (0-no job, 1-job) <input type="text" name="age_category">
+        <input type="submit">
+    </form>
+
+</body>
+</html>
